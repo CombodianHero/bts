@@ -160,8 +160,7 @@ from telegram.ext import (
 # ─────────────────────────────────────────────────────────────────────────────
 
 import os
-
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8676977842:AAGEVgmQ1XIcUdWqwMhn09-g_blIBzsN3OU")
 #BOT_TOKEN = "8676977842:AAGEVgmQ1XIcUdWqwMhn09-g_blIBzsN3OU"   # Get from @BotFather
 
 # ── API Constants (extracted from APK DEX) ──────────────────────────────────
