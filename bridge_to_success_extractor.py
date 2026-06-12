@@ -159,7 +159,10 @@ from telegram.ext import (
 # CONFIGURATION
 # ─────────────────────────────────────────────────────────────────────────────
 
-BOT_TOKEN = "8676977842:AAGEVgmQ1XIcUdWqwMhn09-g_blIBzsN3OU"   # Get from @BotFather
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+#BOT_TOKEN = "8676977842:AAGEVgmQ1XIcUdWqwMhn09-g_blIBzsN3OU"   # Get from @BotFather
 
 # ── API Constants (extracted from APK DEX) ──────────────────────────────────
 BASE_URL    = "https://bridgetosuccess.learncentre.tech"
