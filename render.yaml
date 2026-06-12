@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: bridge-to-success-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bridge_to_success_extractor.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
